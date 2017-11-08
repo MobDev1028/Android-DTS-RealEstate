@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/100bf46e45d5d6de3c43c9601722cbb940f614ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02cc9f2e5899415add52bc716602b6b38e7eeb99">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f02e5ee7800595dfa01d6227d5e64cf4545e4d1f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/26a90ba93cef6dcd739cbbc9690340b1a6d7bd6c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb183283871cbff072b40a32e55e205ceac1dbe9">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_754cdcdf7089f02620e669357b71c8bdb16123c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.3/b4b51d1925cdfda98fd861230c1ecb5855500129/baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_498bbc4874260d0f01a65fc3ec199ba4f63b77e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/01a322966ac12014d8ed58d685aa666c687689b7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95fb87efa034d633ebdcbb7b7a03bc7a2397e14c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/757b8a10be89bfaac45ce224673aa28beb1c5f51/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_504df11f8c15369b82cc99b52327f78a1563526c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/8cfa65957f0ab52379e6d3a7c8235ffbc60bc89f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ab95bad59b87090f999dc3255f1e531141df8f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/7c60f8cbf0965119a9a737331d97ebaf71712382/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a03142cd07e5d85c4cbeddf4d4d452e441026466/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/07533d42545ee5631c5f924feb51ec8c471f7faf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="49050354bece84091394b0215286f3ed7293e33c">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f64edab4243871f75311978aa9d4b1adc30ac13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/adt-bundle-mac-x86_64-20140702/adt-bundle-mac-x86_64-20140702/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta1/constraint-layout-solver-1.0.0-beta1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ac4965ed6786f8d63f1960a996a6be667064cd28">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta1_c9d540936ec77599a39258122176233fab6e59f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c6c702c89bfff3cd9e80b04d668c5e190d588c6">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-lang3-3.5_a8b1d7cdec60f4932514a8a4473d2785f0ed024f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_641b329dc2838c3c3807de00b879807465a1234d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/ea7bb261e7cc90f65b21649529f194054e673b75/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a72b81dda9bd5559aa753722c29f4241fa287a92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/37554ba7eb78d00408af5af06e340da8ea7474e9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_11507adbb00f5dd0879a171a4f9b7a3d6c6d3cf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_9d9c73d83d60510479f076415110dc59d1d857c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/8ba1ba0e1d963faa68aac7a31ad3309e2baa1b71/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ad8321cff5fa475cb39daf387b3cb581aab17f">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a0aee83d91bddea9efb50e4b098e790b07e9ee98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/31d58bc309a0e1d130430140794d42fc28efe2d9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_53d470fdc7e5d99bb1a4a511f04ea15df037c065/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_73596db49770dd10cae0623974dc67471f580d7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/57b80be39360b0af7fee3f66fba4135541fa6a44/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7ff77725723167163d69439e3fd077bd0899babf">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4681f873230b3ae8e3f7a4add4fc16ecccf70021/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3df86fba624b158ea8a7a0dcfd725c83e501a50d">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e93152216dc185e1a03c1dcf453aa88eae862013/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/19993b5ee1131b6fc6c32f8b729c76d66a182d61/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9eeffee9019a8bc1858b2fd71393ff7786bcac99">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8ef5fdd5cf6a61b8bb9bc036b32f72bdfae1edf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9d037548ef884b247b21b1a3f24e74a99803e92d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/Work/AndroidDevelopment/Projects/AndroidRTC/gradle/wrapper/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.2/ccde00f7ccc77af5a6d5752e2cb21f6d8998289f/okhttp-3.4.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ccde00f7ccc77af5a6d5752e2cb21f6d8998289f">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.2_120cea445d68877f251ab21f491ada95c30e4eda/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/667cabe33e91236d00cacd4e8703e94a23a08cf7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3fb1fe781490fcf9fa47ee2c268279f777266a6a">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ca39f44aa3ade56ab76590752da3c9e5da7c1a66/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/7c8e0d5d9011ca1ca89e31e6743a07632324f332/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7d5632a6e6e2b76313418d6b2e1fc75d1458fac9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/0d674586d9a0801f5c77a832e3b2980bcadb3388/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e84b30031d4bab89a2b5c45af4eb9213828524dd">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd21803c09a3e2cc35cd8e6f199a50ad2de37770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/697335d312d019958db8ebb9cfb11a9e91335189/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37b8443a49a1518261272da8d9c47fdd3cdd7268/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/1b415c8b4c390d1787002d12cb484aac5b30b1c0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c91ea2973b0201c782a5d4314d693d9f4043a039/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/2327be90e81b14d7b58541ed70c5bf68f8454bc9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed6b455e3dd7bbf1ff31f8df0b41e2f0d87f3ace">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c29625bfe1c522031ce21e7460c0709496416700/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/75b6fa5de36193df8d6f31ad5561ffe18490c0d2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b3d05d3373014dd78c8923ced629e752179f91b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/c88d2dfd364c07ff669f4de76cf3643b828b5a07/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="884d91b75a47666f29f1c8fde21fe2ced8fb1932">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_091061482d8bfbb21280e3b978beb0178aba9ec9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/c0690866382a47e30326afc90797914b1288dec2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b42cf2134829f715edfa2adaf0ee246631322dba">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f05a8ff66cba950f2d2037f18d96cd2c74eb2c4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/47dd5a9d931e55182568ee63366317375fe858a9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e4072fd48238419f424a112fdeb828d91f69e1a">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_67edc9c7b550ade87f59bf4359767544c665609d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/1e635aba523efba3f0402dc5095eee00b7867307/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1fcfe0300002a68ca906f1e2fac98c9c0579546c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/192f1fe75fd3d5819f5ab4601372319424cb0f36/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e68215611fc38f9aa640fd0cacc1908efa4d6893/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/silver/.android/build-cache/81ab292e88ff51dd4a1d6685efbd321ac5bdc30f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Volumes/Work/AndroidDevelopment/Projects/Ryang/DTS_Android/DTSAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f1a6b7ec5846eea487ebbe10560aed49775702db/classes.dex" />
+    </item>
+
+</items>

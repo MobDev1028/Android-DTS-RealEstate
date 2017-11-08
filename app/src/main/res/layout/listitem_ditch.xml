@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:layout_height="80dp"
+        android:background="#FF5534"
+        android:gravity="center"
+        android:tag="Bottom3"
+        android:weightSum="8"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/holo_red_light"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps = "false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/iv_property"
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/status"
+            android:layout_toRightOf="@+id/iv_property"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="19dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Pending Review"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/action_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

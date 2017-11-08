@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <TextView
+        android:text="Problem:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="Text Code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textcode"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/textView8" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Crash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/crash"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/textView8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="No Listing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nolisting"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/textView9" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Unknown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/unknown"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/textView9" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Details:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/message"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:gravity="top|left"
+        android:textSize="14sp"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:text="120 remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageCount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/submit"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#4fb56f"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

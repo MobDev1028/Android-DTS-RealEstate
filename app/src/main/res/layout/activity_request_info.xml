@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_request_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.dts.dts.activities.RequestInfoActivity">
+
+    <ImageView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ri_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:id="@+id/cid_layout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ri_bg_clouds" />
+
+        <ImageView
+            android:id="@+id/lbl_sending_code_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ri_lbl_sending_code_now"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ly_form_request_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bar"
+            android:layout_marginTop="90dp">
+
+            <LinearLayout
+                android:id="@+id/ly_lbl_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/lbl_entry_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm "
+                    android:textColor="#00C9FF"
+                    android:textSize="30sp"
+                    app:bhFontType="bold" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/lbl_entry_type_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Phone"
+                    android:textColor="#565A5C"
+                    android:textSize="30sp"
+                    app:bhFontType="bold" />
+
+            </LinearLayout>
+
+            <com.dts.dts.views.HNEditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ly_lbl_entry"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:ems="12"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxEms="12"
+                android:textSize="15sp"
+                android:imeOptions="actionNone"
+                android:text="(###)###-####" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ly_lbl_entry"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:background="#CED0CD" />
+
+            <LinearLayout
+                android:id="@+id/ly_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <com.dts.dts.views.HNTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Code "
+                        android:textColor="#00C9FF"
+                        android:textSize="15sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send To"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/txt_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="123.123.1231"
+                    android:textColor="#C12929"
+                    android:textSize="15sp" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_change_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Number?"
+                    android:textColor="#00C9FF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_txt_my_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/selector_img_txt_my_code"
+                android:visibility="visible" />
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/btn_close_this_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_txt_my_code"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="(close this window)"
+                android:textColor="#EEEEEE"
+                android:layout_marginTop="15dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/parent_header"
+        android:background="@android:color/white"
+        android:id="@+id/term_layout"
+        android:layout_marginTop="-20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+        </RelativeLayout>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:id="@+id/webView"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:text="REJECT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reject_button"
+                android:layout_weight="1"
+                android:background="#ef5062"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:text="ACCEPT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/accept_button"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:background="#51bc6a"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/img_bg_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/header" />
+
+        <ImageView
+            android:id="@+id/img_logo_ditch"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_header_ditch"
+            android:layout_width="70dp"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

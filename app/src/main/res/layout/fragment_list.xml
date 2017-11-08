@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dts.dts.fragments.ListFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_properties"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/parent_header"
+        android:layout_marginTop="-29dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_properties"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tabButtonColor"
+        android:divider="@drawable/divider_tabs"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.dts.dts.views.HNTextView
+            android:id="@+id/tab_search"
+            style="@style/BottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search" />
+
+        <com.dts.dts.views.HNTextView
+            android:id="@+id/tab_map"
+            style="@style/BottomTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bg_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header" />
+
+        <ImageView
+            android:id="@+id/img_logo_ditch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_header_ditch" />
+
+        <com.dts.dts.views.HNTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_logo_ditch"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_logo_ditch"
+            android:layout_toRightOf="@+id/img_logo_ditch"
+            android:gravity="center"
+            android:text="Near My Location"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</RelativeLayout>

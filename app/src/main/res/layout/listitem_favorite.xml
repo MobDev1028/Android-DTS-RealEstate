@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:layout_height="80dp"
+        android:background="#FF5534"
+        android:gravity="center"
+        android:tag="Bottom3"
+        android:weightSum="8"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/hide"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/holo_green_light"
+            android:text="HIDE"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps = "false"/>
+        <Button
+            android:id="@+id/unfav"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/holo_red_light"
+            android:text="UNFAV"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:textAllCaps = "false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageButton
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_property"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:layout_marginBottom="2dp"
+            android:textColor="#02ce37"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/tv_duration"
+            android:layout_alignRight="@+id/tv_duration"
+            android:layout_above="@+id/tv_duration" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_duration"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_property"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/arrow_button"
+            android:layout_marginRight="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country"
+            android:layout_below="@id/tv_duration"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignLeft="@+id/tv_duration"
+            android:layout_alignRight="@+id/tv_duration" />
+
+        <ImageButton
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow_button"
+            android:background="@android:color/transparent"
+            android:src="@drawable/fav_ico_chevron"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="19dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

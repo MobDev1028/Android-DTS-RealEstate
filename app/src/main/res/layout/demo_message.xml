@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    android:id="@+id/demo_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_property"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_subject"
+            android:layout_marginBottom="2dp"
+            android:textColor="#02ce37"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+            android:layout_above="@+id/tv_address"
+            android:layout_alignLeft="@+id/tv_address" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_property"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country"
+            android:layout_below="@id/tv_address"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignLeft="@+id/tv_address"
+            android:layout_alignRight="@+id/tv_address" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_message"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <fragment
+                android:id="@+id/mv_diatance"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="false"
+                android:layout_gravity="right"
+                android:layout_marginRight="11dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/mapbutton"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:text="DECLINE"
+            android:layout_height="68dp"
+            android:id="@+id/decline_button"
+            android:background="#fe0002"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="ACCEPT"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:id="@+id/btn_accept"
+            android:background="#00b054"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

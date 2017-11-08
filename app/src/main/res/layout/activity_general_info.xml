@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_general_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dts.dts.activities.GeneralInfoActivity">
+
+    <include layout="@layout/layout_side_menu" />
+
+    <RelativeLayout
+        android:id="@+id/ly_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/parent_header"
+            android:layout_above="@+id/btn_save_user_info"
+            android:layout_marginTop="40dp"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:divider="@drawable/divider_search_items"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="FIRST NAME" />
+
+                <com.dts.dts.views.HNEditText
+                    style="@style/TextUserInfo"
+                    android:id="@+id/et_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="FIRST NAME" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="LAST NAME" />
+
+                <com.dts.dts.views.HNEditText
+                    android:id="@+id/et_last_name"
+                    style="@style/TextUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="LAST NAME" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL" />
+
+                <com.dts.dts.views.HNEditText
+                    android:id="@+id/et_email"
+                    style="@style/TextUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="EMAIL" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS 1" />
+
+                <com.dts.dts.views.HNEditText
+                    android:id="@+id/et_address_1"
+                    style="@style/TextUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="ADDRESS 1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS 2" />
+
+                <com.dts.dts.views.HNEditText
+                    android:id="@+id/et_address_2"
+                    style="@style/TextUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="ADDRESS 2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/LabelUserInfo"
+                    android:layout_height="wrap_content"
+                    android:text="ZIPCODE" />
+
+                <com.dts.dts.views.HNEditText
+                    android:id="@+id/et_zipcode"
+                    style="@style/TextUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="ZIPCODE" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_save_user_info"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="#636363"
+            android:layout_marginTop="10dp"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/parent_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_bg_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header" />
+
+            <ImageView
+                android:id="@+id/img_logo_ditch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo_header_ditch" />
+
+            <ImageView
+                android:id="@+id/btn_side_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_menu"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

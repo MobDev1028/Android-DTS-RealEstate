@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="frequency_entries">
+        <item>Daily</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="text_unit_amenities">
+        <item>Air Conditioning</item>
+        <item>Parking Reserved</item>
+        <item>Balcony</item>
+        <item>Deck</item>
+        <item>Ceiling Fan</item>
+        <item>Dishwasher</item>
+        <item>Fireplace</item>
+        <item>Furnished</item>
+        <item>Laundry</item>
+        <item>Carpeted Floors</item>
+        <item>Hardwood Floors</item>
+        <item>Carpet</item>
+    </string-array>
+
+    <string-array name="key_unit_amenities">
+        <item>unit_amen_ac</item>
+        <item>unit_amen_parking_reserved</item>
+        <item>unit_amen_balcony</item>
+        <item>unit_amen_deck</item>
+        <item>unit_amen_ceiling_fan</item>
+        <item>unit_amen_dishwasher</item>
+        <item>unit_amen_fireplace</item>
+        <item>unit_amen_furnished</item>
+        <item>unit_amen_laundry</item>
+        <item>unit_amen_floor_carpet</item>
+        <item>unit_amen_floor_hard_wood</item>
+        <item>unit_amen_carpet</item>
+    </string-array>
+
+    <string-array name="text_build_amenities">
+        <item>Fitness Center</item>
+        <item>Business Center</item>
+        <item>Concierge</item>
+        <item>Doorman</item>
+        <item>Dry Cleaning</item>
+        <item>Elevator</item>
+        <item>Garage</item>
+        <item>Swim Pool</item>
+        <item>Security Entry</item>
+        <item>Storage</item>
+    </string-array>
+
+    <string-array name="key_build_amenities">
+        <item>build_amen_fitness_center</item>
+        <item>build_amen_biz_center</item>
+        <item>build_amen_concierge</item>
+        <item>build_amen_doorman</item>
+        <item>build_amen_dry_cleaning</item>
+        <item>build_amen_elevator</item>
+        <item>build_amen_park_garage</item>
+        <item>build_amen_swim_pool</item>
+        <item>build_amen_secure_entry</item>
+        <item>build_amen_storage</item>
+    </string-array>
+
+    <string-array name="fonts_path" >
+        <item>fonts/helvetica_neue.ttf</item>
+        <item>fonts/helvetica_neue_thin.ttf</item>
+        <item>fonts/helvetica_neue_light.ttf</item>
+        <item>fonts/helvetica_neue_medium.ttf</item>
+        <item>fonts/helvetica_neue_lt_italic.ttf</item>
+        <item>fonts/helvetica_neue_bold.ttf</item>
+    </string-array>
+
+</resources>

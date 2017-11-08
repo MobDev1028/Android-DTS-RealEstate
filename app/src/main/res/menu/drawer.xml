@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_details"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="My Details" />
+        <item
+            android:id="@+id/my_rent"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="My Rent" />
+        <item
+            android:id="@+id/my_search_agent"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="My Search Agents" />
+        <item
+            android:id="@+id/ditch_my_space"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="Ditch My Space" />
+        <item
+            android:id="@+id/my_ditch"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="My Ditch" />
+        <item
+            android:id="@+id/blank1"
+            android:checked="false"
+            android:title="" />
+        <item
+            android:id="@+id/technical_support"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="Technical Support" />
+
+        <item
+            android:id="@+id/feedback"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/blank2"
+            android:checked="false"
+            android:title="" />
+
+        <item
+            android:id="@+id/term_of_service"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="Terms of Service" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:checked="false"
+            android:icon="@drawable/account_gear"
+            android:title="Privacy Policy" />
+
+        <!--<item-->
+            <!--android:id="@+id/blank1"-->
+            <!--android:checked="false"-->
+            <!--android:title="" />-->
+        <!--<item-->
+            <!--android:id="@+id/blank2"-->
+            <!--android:checked="false"-->
+            <!--android:title="" />-->
+        <!--<item-->
+            <!--android:id="@+id/blank3"-->
+            <!--android:checked="false"-->
+            <!--android:title="" />-->
+        <!--<item-->
+            <!--android:id="@+id/blank4"-->
+            <!--android:checked="false"-->
+            <!--android:title="" />-->
+
+
+    </group>
+</menu>

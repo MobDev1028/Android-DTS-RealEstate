@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/main_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/top_layout">
+
+        <ImageButton
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_property"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_subject"
+            android:layout_marginBottom="2dp"
+            android:textColor="#02ce37"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+            android:layout_above="@+id/tv_address"
+            android:layout_alignLeft="@+id/tv_address" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_property"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country"
+            android:layout_below="@id/tv_address"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignLeft="@+id/tv_address"
+            android:layout_alignRight="@+id/tv_address" />
+
+    </RelativeLayout>
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:layout_width="match_parent"
+        android:id="@+id/signature_pad"
+        android:layout_height="130dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/sig_border_layout"
+        android:layout_below="@+id/top_layout" />
+
+    <TextView
+        android:text="Clear"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:id="@+id/clear"
+        android:background="#09abed"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/signature_pad"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/button_layout"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="DECLINE"
+            android:layout_height="68dp"
+            android:id="@+id/decline_button"
+            android:background="#fe0002"
+            android:layout_width="93dp" />
+
+        <Button
+            android:text="CONTINUE"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/continue_button"
+            android:background="#00b054"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/decline_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

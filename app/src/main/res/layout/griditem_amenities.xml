@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.dts.dts.views.HNTextView
+        android:id="@+id/btn_amenity_item"
+        style="@style/SearchFilterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_search_filter"
+        android:text="Other" />
+
+</LinearLayout>

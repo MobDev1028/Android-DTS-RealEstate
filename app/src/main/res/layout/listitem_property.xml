@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.dts.dts.views.CustomViewPager
+        android:id="@+id/vp_img_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <com.dts.dts.views.HNTextView
+        android:id="@+id/txt_count_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_property_img_count"
+        android:paddingBottom="5dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="5dp"
+        android:text="1/1"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_overlay_bar"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bottom_black_overlay"
+            tools:ignore="ContentDescription"
+            android:layout_alignTop="@+id/ly_bottom"
+            android:layout_height="75dp"
+            android:layout_marginBottom="-4dp" />
+
+        <RelativeLayout
+            android:id="@+id/ly_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_heart">
+
+            <ImageView
+                android:id="@+id/img_is_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bottom_green_new"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentBottom="false"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+
+                <RelativeLayout
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sq_layout"
+                    android:layout_marginTop="8dp">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_count_sq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="1505"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/img_sq"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/txt_count_sq"
+                        android:src="@drawable/ico_sqft"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bedroom_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sq_layout"
+                    android:layout_marginTop="8dp">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_count_bedrooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/img_bedroom"
+                        android:layout_alignLeft="@+id/img_bedroom"
+                        android:layout_alignRight="@+id/img_bedroom"
+                        android:layout_alignStart="@+id/img_bedroom"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/img_bedroom"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_below="@+id/txt_count_bedrooms"
+                        android:src="@drawable/ic_bedroom_wht"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bath_layout"
+                    android:layout_toRightOf="@+id/bedroom_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_count_baths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/img_baths"
+                        android:layout_alignLeft="@+id/img_baths"
+                        android:layout_alignRight="@+id/img_baths"
+                        android:layout_alignStart="@+id/img_baths"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/img_baths"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_below="@+id/txt_count_baths"
+                        android:src="@drawable/ic_bathroom_wht" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_property_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_property_price"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="234 da 23sq"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_property_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="$1231/"
+                android:textColor="#02ce37"
+                android:textSize="24sp"
+                app:bhFontType="medium"
+                tools:ignore="HardcodedText"/>
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/txt_property_price"
+                android:text="month"
+                android:textColor="#02ce37"
+                android:textSize="14sp"
+                app:bhFontType="medium"
+                tools:ignore="HardcodedText"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="53dp"
+            app:srcCompat="@drawable/listing_stamp_inquired"
+            android:id="@+id/inrequired"
+            android:layout_toLeftOf="@+id/img_heart"
+            android:layout_marginRight="9dp" />
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-26dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/selector_img_heart_likeable" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_property_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dts.dts.activities.PropertyDetailActivity"
+    android:background="@android:color/white">
+
+    <com.dts.dts.views.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_bottom_buttons"
+        android:layout_below="@+id/parent_header"
+        android:fillViewport="true"
+        android:id="@+id/scroll_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <com.dts.dts.views.CustomViewPager
+                    android:id="@+id/vp_img_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/txt_count_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_property_img_count"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:text="1/1"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D0422A">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_distance_overlay"
+                    android:layout_toStartOf="@+id/img_distance_overlay"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_property_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="$10K/Month"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        app:bhFontType="bold"
+                        android:textStyle="normal|bold" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/lbl_security_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/txt_property_price"
+                        android:layout_alignRight="@+id/txt_property_price"
+                        android:layout_below="@+id/txt_property_price"
+                        android:text="Security Deposit"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_security_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_property_price"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/lbl_security_deposit"
+                        android:layout_toStartOf="@+id/lbl_security_deposit"
+                        android:text="$500"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/txt_property_price"
+                        android:layout_alignRight="@+id/txt_property_price"
+                        android:layout_below="@+id/lbl_security_deposit"
+                        android:text="Move-In Total"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_move_in_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/txt_security_deposit"
+                        android:layout_alignRight="@+id/txt_security_deposit"
+                        android:layout_below="@+id/txt_security_deposit"
+                        android:text="$300"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_address_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/txt_property_price"
+                        android:layout_alignRight="@+id/txt_property_price"
+                        android:layout_below="@+id/txt_move_in_total"
+                        android:layout_marginTop="10dp"
+                        android:text="548 S Spring Street"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_address_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/txt_property_price"
+                        android:layout_alignRight="@+id/txt_property_price"
+                        android:layout_below="@+id/txt_address_1"
+                        android:text="548 S Spring Street"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+                <fragment
+                    android:id="@+id/mv_diatance"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/img_distance_overlay"
+                    android:layout_alignEnd="@+id/img_distance_overlay"
+                    android:layout_alignLeft="@+id/img_distance_overlay"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/img_distance_overlay"
+                    android:layout_alignStart="@+id/img_distance_overlay" />
+
+                <ImageView
+                    android:id="@+id/img_distance_overlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/prop_detail_overlay_distance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/img_distance_overlay"
+                    android:layout_alignEnd="@+id/img_distance_overlay"
+                    android:layout_alignLeft="@+id/img_distance_overlay"
+                    android:layout_alignRight="@+id/img_distance_overlay"
+                    android:layout_alignStart="@+id/img_distance_overlay"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_pd_distance" />
+
+                    <TextView
+                        android:id="@+id/txt_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0970f0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3D4045"
+                android:divider="@drawable/divider_prop_details"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_count_bed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_lbl_bed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bed Rooms"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_count_bath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_lbl_bath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bed Rooms"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_lot_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Square Feet"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/map_layout"
+                android:background="@android:color/black">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/screenViewMap">
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/generalMapLayout">
+
+                    <fragment
+                        android:id="@+id/mv_map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/changeMap"
+                    android:src="@drawable/map_filled"
+                    android:background="@drawable/map_control_border"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/fullscreen"
+                    android:src="@drawable/expand"
+                    android:background="@drawable/map_control_border"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/detailHand"
+                    android:src="@drawable/screw"
+                    android:background="@drawable/map_control_border"
+                    android:scaleType="fitXY"
+                    android:padding="8dp" />
+            </RelativeLayout>
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_prop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#165E74"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:bhFontType="bold" />
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_prop_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1F3239"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <com.dts.dts.views.HNTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D0422A"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:text="Highlights"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:bhFontType="medium" />
+
+            <LinearLayout
+                android:id="@+id/ly_prop_highlights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3D4045"
+                android:divider="@drawable/divider_search_items"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="50dp"
+                android:paddingStart="50dp"
+                android:paddingTop="15dp"
+                android:showDividers="middle" />
+
+            <com.dts.dts.views.HNTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D0422A"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:text="Amenities"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:bhFontType="medium" />
+
+            <LinearLayout
+                android:id="@+id/ly_prop_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3D4045"
+                android:divider="@drawable/divider_search_items"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="50dp"
+                android:paddingStart="50dp"
+                android:paddingTop="15dp"
+                android:showDividers="middle" />
+
+            <LinearLayout
+                android:id="@+id/ly_prop_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_report"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:text="REPORT LISTING"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+    </com.dts.dts.views.CustomScrollView>
+
+    <LinearLayout
+        android:id="@+id/ly_bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.dts.dts.views.HNTextView
+            style="@style/PropDetailButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EE4F63"
+            android:text="Hide Listing"
+            android:id="@+id/btn_hide_listing" />
+
+        <com.dts.dts.views.HNTextView
+            android:id="@+id/btn_request_info"
+            style="@style/PropDetailButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#53BC6A"
+            android:text="Request Info" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_call"
+        android:id="@+id/call_button" />
+
+    <RelativeLayout
+        android:id="@+id/parent_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_bg_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_logo_ditch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_header_back"
+            android:visibility="gone" />
+
+        <com.dts.dts.views.HNTextView
+            android:id="@+id/txt_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_logo_ditch"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/img_logo_ditch"
+            android:layout_toRightOf="@+id/img_logo_ditch"
+            android:gravity="center"
+            android:text="Near My Location"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

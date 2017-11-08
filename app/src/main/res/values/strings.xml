@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ditch</string>
+    <string name="hint_enter_city_region">Enter City / Region</string>
+    <string name="show_more_filters">Show more filters</string>
+    <string name="reset_all_filters">Reset all filters</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="err_unknown">The application has encountered unknown error while communicating with server.</string>
+    <string name="err_no_internet">The application was unable to connect to server due to lack of internet connectivity.</string>
+    <string name="err_io">There was input/output error while connecting to server.</string>
+    <string name="err_timeout">Slow internet connection resulted in connection timeout, try again.</string>
+    <string name="err_protocol">There was an error with network protocol, please try later.</string>
+    <string name="err_uri">The resource located on server was not found.</string>
+
+</resources>

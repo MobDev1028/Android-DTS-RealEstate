@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/activity_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_search_items"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:showDividers="middle"
+            tools:context="com.dts.dts.activities.SearchActivity"
+            android:background="#f6f5fb">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_while_border_gray">
+
+                <com.dts.dts.views.DelayAutoCompleteTextView
+                    android:id="@+id/et_places"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/hint_enter_city_region"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading_indicator"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right|end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/close"
+                    android:id="@+id/close_button"
+                    android:background="@drawable/close_background"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp" />
+            </FrameLayout>
+
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE"
+                android:textColor="@android:color/darker_gray" />
+
+
+            <com.dts.dts.views.HNTextView
+                android:id="@+id/txt_property_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+            <io.apptik.widget.MultiSlider
+                android:id="@+id/range_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:range1="@drawable/multislider_scrubber_track_holo_light"
+                app:rangeColor="@color/colorBlueMultiOptions"
+                app:scaleMax="6000"
+                app:scaleMin="0"
+                app:stepsThumbsApart="875"
+                app:thumbNumber="2" />
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEASE TERM"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:text="Short Term"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shortterm"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:text="Long Term"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/longterm"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LISTING TYPE"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:text="Apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/apartment"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:text="Condo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/condo"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:text="House"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/house"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:text="Other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/other"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bedrooms"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_multi_options"
+                android:divider="@drawable/divider_multi_options"
+                android:showDividers="middle">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bed_option_1"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_left"
+                    android:text="1" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bed_option_2"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options"
+                    android:text="2" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bed_option_3"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options"
+                    android:text="3" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bed_option_4"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_right"
+                    android:text="4" />
+            </LinearLayout>
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bathrooms"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_multi_options"
+                android:divider="@drawable/divider_multi_options"
+                android:showDividers="middle">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bath_option_1"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_left"
+                    android:tag="1"
+                    android:text="1+" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bath_option_2"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options"
+                    android:tag="2"
+                    android:text="2+" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bath_option_3"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options"
+                    android:tag="3"
+                    android:text="3+" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bath_option_4"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options"
+                    android:tag="4"
+                    android:text="4+" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/bath_option_5"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_right"
+                    android:tag="5"
+                    android:text="5+" />
+            </LinearLayout>
+
+            <com.dts.dts.views.HNTextView
+                style="@style/labelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pets"
+                android:textColor="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_filter_dogs"
+                    style="@style/SearchFilterTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:text="Dogs"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_filter_cats"
+                    style="@style/SearchFilterTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_search_filter"
+                    android:text="Cats"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_additional_filters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:divider="@drawable/divider_search_items"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dts.dts.views.HNTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Hide listing with fees"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/labelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unit Amenities"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_amenities_unit"
+                    style="@style/AmenitiesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select amenities (e.g. fireplace, in-unit laundry)" />
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/labelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Building Amenities"
+                    android:textColor="@android:color/darker_gray" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_amenities_building"
+                    style="@style/AmenitiesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select amenities (e.g. gym, pool, concierge)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_toggle_additional_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:tag="hidden"
+                    android:text="@string/show_more_filters"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/bg_round_multi_options"
+                android:divider="@drawable/divider_multi_options"
+                android:showDividers="middle">
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_search_regular"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_left"
+                    android:gravity="center_horizontal"
+                    android:text="Regular Search" />
+
+                <com.dts.dts.views.HNTextView
+                    android:id="@+id/btn_search_agent"
+                    style="@style/MultiOptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_multi_options_right"
+                    android:text="Create Search Agent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_search_agent_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:divider="@drawable/divider_search_items"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:visibility="gone">
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/labelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search Agent options" />
+
+                <com.dts.dts.views.HNTextView
+                    style="@style/labelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frequency" />
+
+                <Spinner
+                    android:id="@+id/frequency"
+                    style="@style/Editext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/frequency_entries"
+                    android:nextFocusDown="@+id/txt_property_price"
+                    android:text="Weekly" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dts.dts.views.HNTextView
+                        style="@style/labelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        android:text="Start" />
+
+                    <com.dts.dts.views.HNTextView
+                        style="@style/labelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="End" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_start_date"
+                        style="@style/Editext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1" />
+
+                    <com.dts.dts.views.HNTextView
+                        android:id="@+id/txt_end_date"
+                        style="@style/Editext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/parent_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bg_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header" />
+
+        <ImageView
+            android:id="@+id/img_logo_ditch"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_header_back"
+            android:layout_width="91dp" />
+
+        <com.dts.dts.views.HNTextView
+            android:id="@+id/btn_reset_search"
+            android:layout_width="65dp"
+            android:layout_height="39dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:text="Reset"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btn_search_now"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="SEARCH NOW"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:background="#51bc6a"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <include
+        android:id="@+id/ly_amenity_grid"
+        layout="@layout/layout_search_amenities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

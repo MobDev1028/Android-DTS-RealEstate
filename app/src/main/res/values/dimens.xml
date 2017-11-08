@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginListitemProperty">-29dp</dimen>
+    <dimen name="cornerFieldRadius">5dp</dimen>
+    <dimen name="sizeMultiOptionsLine">4px</dimen>
+    <dimen name="sideMenuWidth">230dp</dimen>
+    <dimen name="design_navigation_icon_size">18dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#CF422F</color>
+    <color name="windowBackground">#f5f4fa</color>
+
+    <color name="colorListingHeader">#CF422F</color>
+    <color name="tabButtonColor">#00c7fc</color>
+    <color name="colorBlueMultiOptions">#3d9eff</color>
+    <color name="colorDitchButton">#45bce2</color>
+    <color name="colorSearchFiltersToggle">#007AFF</color>
+</resources>
